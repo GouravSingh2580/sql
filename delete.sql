@@ -2,6 +2,14 @@ delete from employee where id=3;
 delete from employee; --delete whole set
 
 
+-- Alter is to alter the structure of the table.
+alter table employee add column jobtitle varchar(50);
+alter table employee drop column jobtitle;
+alter table employee modify column firstname varchar(30);
+alter table employee drop primary key;
+alter table employee add primary key (id);
+
+
 - 1. DELETE : 
 -- Basically, it is a Data Manipulation Language Command (DML). It is used to delete one or more tuples of a table. With the help of the “DELETE” command, we can either delete all the rows in one go or can delete rows one by one. i.e., we can use it as per the requirement or the condition using the Where clause. It is comparatively slower than the TRUNCATE command. The TRUNCATE command does not remove the structure of the table.
 
