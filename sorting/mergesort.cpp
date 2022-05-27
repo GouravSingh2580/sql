@@ -6,7 +6,7 @@ void mergesort(T l,T h){
         T mid = l + (h - l) / 2;
         mergesort(l,mid);
         mergesort(mid+1,h);
-        std::inplace_merge(l,mid,h);
+        inplace_merge(l,mid,h);
     }
 }
 
